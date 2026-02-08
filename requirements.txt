@@ -1,7 +1,10 @@
 numpy
 pandas
 matplotlib
-streamlit
 seaborn
 plotly
-ast
+streamlit>=1.52.0
+streamlit-bokeh
+bokeh
+holoviews
+statsmodels  # Add this line
