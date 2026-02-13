@@ -26,7 +26,7 @@ except Exception:
 # -------------------------
 # Config
 # -------------------------
-st.set_page_config(page_title="SG Jobs & Salary Dashboard (Max Features)", layout="wide")
+st.set_page_config(page_title="Singapore Jobs Market Salary Dashboard for Jobseekers", layout="wide")
 
 DATA_PATH = "SGJobData.csv"
 
