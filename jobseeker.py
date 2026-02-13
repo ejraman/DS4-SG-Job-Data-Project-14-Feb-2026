@@ -136,7 +136,7 @@ def kpi_block(dff):
 # -------------------------
 # Load data
 # -------------------------
-st.title("🇸🇬 Job & Salary Transparency Dashboard (Max Features)")
+st.title("Singapore Jobs Market Salary Dashboard for Jobseekers")
 
 if not os.path.exists(DATA_PATH):
     st.error(f"⚠️ File '{DATA_PATH}' cannot be found in the current directory.")
