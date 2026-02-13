@@ -321,8 +321,8 @@ with tab_salarybenchmarking:
     path_selection = st.multiselect("Select hierarchy fields:", options=selectable, default=["postedCompany_name", "positionLevels"])
 
     if path_selection:
-        top_10 = df["postedCompany_name"].value_counts().nlargest(10).index
-        df_c2 = df[df["postedCompany_name"].isin(top_10)].copy()
+        top_10 = dff["postedCompany_name"].value_counts().nlargest(10).index
+        df_c2 = dff[dff["postedCompany_name"].isin(top_10)].copy()
         df_c2["salary_label"] = (df_c2["avg_salary"] / 1000).round(0).astype(int).astype(str) + "k"
         
         fig2 = px.sunburst(
