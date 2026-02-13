@@ -334,7 +334,7 @@ with tab_salarybenchmarking:
             range_color=[0, 12000],
             maxdepth=4
         )
-        fig2.update_layout(height=700)
+        fig2.update_layout(height=850, margin=dict(t=20, l=0, r=0, b=0),uniformtext=dict(minsize=10, mode='hide'))
         st.plotly_chart(fig2, use_container_width=True)
 
 # Important: The next 'with' statement must be back at the main indentation level
