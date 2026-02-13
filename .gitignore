@@ -3,3 +3,5 @@
 venv/
 __pycache__/
 *.pyc
+SGJobData*.csv
+*.Zone.Identifier

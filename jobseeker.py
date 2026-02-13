@@ -1,3 +1,5 @@
+import pandas as pd
+import streamlit as st
 import os, json, ast, re, textwrap
 import numpy as np
 import pandas as pd
@@ -15,6 +17,15 @@ from holoviews import opts
 hv.extension("bokeh")
 
 import statsmodels.formula.api as smf
+
+@st.cache_data(show_spinner="Loading data...")
+def load_data():
+    return pd.read_csv("SGJobData.csv", nrows=200_000)
+
+df = load_data()
+st.write("Rows loaded:", len(df))
+
+
 
 # Optional: for Holoviews chord inside Streamlit (if installed)
 try:
